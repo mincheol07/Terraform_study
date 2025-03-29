@@ -17,7 +17,7 @@ resource "aws_route_table" "nat-route-table" {
     vpc_id = aws_vpc.test-vpc.id
 
     route {
-        cidr_block = "10.0.2.0/24"
+        cidr_block = "0.0.0.0/0"
         gateway_id = aws_nat_gateway.test-nat.id
     }
 
